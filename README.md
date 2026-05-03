@@ -31,25 +31,6 @@ This analysis identifies top-performing customers based on total revenue, enabli
 
 ![SQL Output](sql_output.png.png)
 
-## Additional Analysis
-
-To derive high-level business insights, the following query was executed:
-
-SELECT 
-    SUM(revenue) AS total_revenue,
-    AVG(revenue) AS avg_revenue
-FROM customers;
-
-This analysis provides an overview of total business revenue and the average revenue generated per transaction/customer, helping in understanding overall performance and value distribution.
-
-
-### Output
-
-The result of the above query is shown below:
-
-![SQL Analysis](sql_analysis.png)
-
-
 ## Tech Stack
 
 * Python
