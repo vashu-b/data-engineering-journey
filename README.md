@@ -29,7 +29,7 @@ This analysis identifies top-performing customers based on total revenue, enabli
 
 ### Output
 
-![SQL Output](sql_output.png)
+![SQL Output](sql_output.png.png)
 
 ## Tech Stack
 
