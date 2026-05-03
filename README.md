@@ -41,10 +41,25 @@ SELECT first_name, SUM(revenue) AS total_revenue
 FROM customers
 GROUP BY first_name
 ORDER BY total_revenue DESC;
+```
+
+#### Output
+
+![Top Customers](./sql_output.png)
+
+---
 
 ### 2. Overall Revenue Metrics
 
+```sql
 SELECT 
     SUM(revenue) AS total_revenue,
     AVG(revenue) AS avg_revenue
 FROM customers;
+```
+
+#### Output
+
+![Revenue Analysis](./sql_analysis.png)
+
+---
