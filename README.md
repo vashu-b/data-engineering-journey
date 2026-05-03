@@ -71,3 +71,9 @@ project1/
 * Add error handling and logging
 * Automate the pipeline using scheduling tools
 * Extend to handle larger datasets
+
+### Output
+
+The query output below shows the total revenue and average revenue derived from the dataset:
+
+![SQL Analysis](sql_analysis.png)
