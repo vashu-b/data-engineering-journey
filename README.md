@@ -42,7 +42,6 @@ FROM customers;
 
 This analysis provides an overview of total business revenue and the average revenue generated per transaction/customer, helping in understanding overall performance and value distribution.
 
-### Output
 
 ### Output
 
