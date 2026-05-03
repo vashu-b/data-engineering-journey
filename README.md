@@ -16,6 +16,21 @@ The pipeline follows a standard ETL (Extract, Transform, Load) process:
 * Transform: Apply basic data cleaning and revenue adjustment
 * Load: Insert the processed data into a MySQL database
 
+## SQL Analysis
+
+The following query was used to analyze customer revenue:
+
+SELECT first_name, SUM(revenue) AS total_revenue
+FROM customers
+GROUP BY first_name
+ORDER BY total_revenue DESC;
+
+This analysis identifies top-performing customers based on total revenue, enabling better business decision-making.
+
+### Output
+
+![SQL Output](sql_output.png)
+
 ## Tech Stack
 
 * Python
