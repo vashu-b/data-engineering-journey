@@ -28,19 +28,26 @@ project1/
 │── main.py
 │── sales.csv
 │── sql_analysis.png
+│── sql_output.png
 │── README.md
 
 
 ## SQL Analysis
 
+### 1. Top Customers by Revenue
+
 ```sql
+SELECT first_name, SUM(revenue) AS total_revenue
+FROM customers
+GROUP BY first_name
+ORDER BY total_revenue DESC;
+Output
+
+2. Overall Revenue Metrics
 SELECT 
     SUM(revenue) AS total_revenue,
     AVG(revenue) AS avg_revenue
 FROM customers;
-
-This query gives total revenue and average revenue for business understanding.
-
 Output
 
 Outcome
