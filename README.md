@@ -1,20 +1,16 @@
 # Customer Data Pipeline
 
 ## Overview
-
-This project demonstrates an end-to-end data pipeline built using Python, Pandas, and MySQL. The pipeline reads raw data from a CSV file, performs basic transformations, and loads the processed data into a structured database.
+This project demonstrates an end-to-end data pipeline built using Python, Pandas, and MySQL. The pipeline reads raw data from a CSV file, performs transformations, and loads the processed data into a structured database.
 
 ## Problem
-
-Raw data stored in flat files is not always ready for analysis. It often requires cleaning, formatting, and structuring before it can be used effectively. This project addresses that by building a simple pipeline to process and store data in a database.
+Raw CSV data is not directly usable for analysis. It needs cleaning, structuring, and storage in a database.
 
 ## Approach
-
-The pipeline follows a standard ETL (Extract, Transform, Load) process:
-
-* Extract: Read data from a CSV file using Pandas
-* Transform: Apply basic data cleaning and revenue adjustment
-* Load: Insert the processed data into a MySQL database
+ETL process:
+- Extract: Read CSV using Pandas  
+- Transform: Clean data and adjust revenue  
+- Load: Insert into MySQL  
 
 ## SQL Analysis
 
@@ -32,49 +28,34 @@ This analysis identifies top-performing customers based on total revenue, enabli
 ![SQL Output](sql_output.png.png)
 
 ## Tech Stack
-
-* Python
-* Pandas
-* MySQL
-* SQL
-* Git
+- Python  
+- Pandas  
+- MySQL  
+- SQL  
+- Git  
 
 ## Implementation Details
 
 ### Data Extraction
-
-The dataset is read from a CSV file using Pandas and stored as a DataFrame.
+Read CSV using Pandas into a DataFrame.
 
 ### Data Transformation
-
-Revenue values are adjusted and the dataset is cleaned to ensure consistency before loading.
+Adjusted revenue and cleaned dataset.
 
 ### Data Loading
-
-A connection is established with MySQL using `mysql-connector-python`, and the processed records are inserted into the database.
+Inserted processed data into MySQL using connector.
 
 ## Project Structure
-
 project1/
-│── main.py
-│── sales.csv
-│── README.md
-
-## Outcome
-
-* Built a working ETL pipeline using Python and MySQL
-* Gained hands-on experience with data ingestion, transformation, and storage
-* Understood how structured databases improve data usability
-
-## Next Steps
-
-* Add error handling and logging
-* Automate the pipeline using scheduling tools
-* Extend to handle larger datasets
+│── extract.py  
+│── transform.py  
+│── load.py  
+│── main.py  
+│── sales.csv  
+│── sql_analysis.png  
+│── README.md  
 
 ## SQL Analysis
-
-To analyze customer revenue, the following query was executed:
 
 ```sql
 SELECT 
