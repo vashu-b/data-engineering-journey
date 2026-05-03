@@ -41,23 +41,10 @@ SELECT first_name, SUM(revenue) AS total_revenue
 FROM customers
 GROUP BY first_name
 ORDER BY total_revenue DESC;
-Output
-![Top Customers](./sql_output.png)
 
-### Overall Revenue Metrics
+### 2. Overall Revenue Metrics
+
 SELECT 
     SUM(revenue) AS total_revenue,
     AVG(revenue) AS avg_revenue
 FROM customers;
-Output
-![Revenue Analysis](./sql_analysis.png)
-
-
-Outcome
-Built ETL pipeline
-Transformed raw data
-Stored and analyzed structured data
-Next Steps
-Automate pipeline
-Add scheduling
-Scale system
