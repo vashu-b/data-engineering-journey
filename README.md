@@ -72,8 +72,12 @@ project1/
 * Automate the pipeline using scheduling tools
 * Extend to handle larger datasets
 
-### Output
+## SQL Analysis
 
-The query output below shows the total revenue and average revenue derived from the dataset:
+To analyze customer revenue, the following query was executed:
 
-![SQL Analysis](sql_analysis.png)
+```sql
+SELECT 
+    SUM(revenue) AS total_revenue,
+    AVG(revenue) AS avg_revenue
+FROM customers;
