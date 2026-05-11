@@ -1,6 +1,7 @@
 import logging
 from extract import extract
 from transform import transform
+from validate import validate_data
 from load import load
 
 logging.basicConfig(
@@ -10,14 +11,18 @@ logging.basicConfig(
 )
 
 def main():
-    logging.info("Pipeline started")
+    try:
+        logging.info("Pipeline started")
 
-    df = extract()
-    df = transform(df)
-    load(df)
+        df = extract()
+        df = validate_data(df)
+        df = transform(df)
+        load(df)
+
+        logging.info("Pipeline completed successfully")
+
+    except Exception as e:
+        logging.error(f"Pipeline failed: {e}")
 
 if __name__ == "__main__":
-    df = extract()
-    df = transform(df)
-    load(df)
-    
+    main()
