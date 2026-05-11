@@ -3,7 +3,11 @@ from extract import extract
 from transform import transform
 from load import load
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(
+    filename='pipeline.log',
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
 
 def main():
     logging.info("Pipeline started")
@@ -13,4 +17,7 @@ def main():
     load(df)
 
 if __name__ == "__main__":
-    main()
+    df = extract()
+    df = transform(df)
+    load(df)
+    
