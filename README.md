@@ -63,3 +63,17 @@ FROM customers;
 ![Revenue Analysis](./sql_analysis.png)
 
 ---
+
+### Data Validation
+Added validation checks to ensure data quality before loading into MySQL:
+- Empty file check
+- Missing customer name check
+- Missing revenue check
+- Negative revenue check
+
+
+## Power BI Dashboard
+
+The dashboard below visualizes key business metrics including total revenue, average revenue, customer count, and top customers by revenue.
+
+![Power BI Dashboard](./powerbi_dashboard.png)
