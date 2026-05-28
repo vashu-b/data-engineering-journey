@@ -1,0 +1,20 @@
+2026-05-11 21:34:12,609 - INFO - Reading CSV file
+2026-05-11 21:34:12,612 - INFO - Transforming data
+2026-05-11 21:34:12,650 - INFO - Data loaded into MySQL
+2026-05-11 21:44:24,691 - INFO - Reading CSV file
+2026-05-11 21:44:24,694 - INFO - Transforming data
+2026-05-11 21:44:24,776 - INFO - Data loaded into MySQL
+2026-05-11 21:45:12,360 - INFO - Pipeline started
+2026-05-11 21:45:12,361 - INFO - Reading CSV file
+2026-05-11 21:45:12,364 - INFO - Validating data
+2026-05-11 21:45:12,368 - INFO - Data validation passed
+2026-05-11 21:45:12,368 - INFO - Transforming data
+2026-05-11 21:45:12,407 - INFO - Data loaded into MySQL
+2026-05-11 21:45:12,407 - INFO - Pipeline completed successfully
+2026-05-11 21:46:05,820 - INFO - Pipeline started
+2026-05-11 21:46:05,820 - INFO - Reading CSV file
+2026-05-11 21:46:05,824 - INFO - Validating data
+2026-05-11 21:46:05,827 - INFO - Data validation passed
+2026-05-11 21:46:05,827 - INFO - Transforming data
+2026-05-11 21:46:05,911 - INFO - Data loaded into MySQL
+2026-05-11 21:46:05,912 - INFO - Pipeline completed successfully
