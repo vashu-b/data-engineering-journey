@@ -101,20 +101,9 @@ This project demonstrates a cloud-based ETL pipeline using Azure services.
 
 ## Screenshots
 
-### Blob Storage Container
-![Blob Storage](azure-data-factory-project/screenshots/blob_container.png)
-
-### Linked Services
-![Linked Services](azure-data-factory-project/screenshots/linked_services.png)
-
-### Datasets
-![Datasets](azure-data-factory-project/screenshots/datasets.png)
-
-### Pipeline Success
-![Pipeline Success](azure-data-factory-project/screenshots/pipeline_success.png)
-
-### SQL Table Data
-![SQL Table](azure-data-factory-project/screenshots/sql_table_data.png)
-
-### SQL Count Validation
-![SQL Count](azure-data-factory-project/screenshots/sql_count.png)
+![Blob Storage](./blob_container.png)
+![Linked Services](./linked_services.png)
+![Datasets](./datasets.png)
+![Pipeline Success](./pipeline_success.png)
+![SQL Table](./sql_table_data.png)
+![SQL Count](./sql_count.png)
